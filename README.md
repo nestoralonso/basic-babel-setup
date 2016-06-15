@@ -96,4 +96,20 @@ Babel necesita configuración porque puede hacer un gran variedad de cosas como 
 ```bash
 npm run build
 ```
-Este paso genera un *bundle.js* en la carpeta dist, este se puede jecutar directamente en node on si es para una página incluirlo en la sección de scripts 
+Este paso genera un *bundle.js* en la carpeta dist, este se puede jecutar directamente en node on si es para una página incluirlo en la sección de scripts
+
+### Qué leer después
+
+*npm* sirve para automatizar toda clase de tareas como:
+- Estar pendiente de cambios en los fuentes, compilar y recargar automaticamente el browser.
+- correr preprocesadores como sass (css en esteroides), less (es como sass). 
+- correr linters (estos revisan el código y alertan de posibles errores como falta de puntos y comas o indentación incorrecta)
+- correr test automatizados (ver jasmine o mocha)
+ 
+
+ Ver [npm as a build tool](http://blog.keithcirkel.co.uk/how-to-use-npm-as-a-build-tool/) 
+
+**Nota**: hay veces para empezar es bueno bajar *boilerplates* que son esqueletos de proyecto que ahorran mucho trabajo, como por ejemplo este [boilerplate](https://github.com/gruberb/angular-boilerplate) de angular (q no he probado, es solo un ejemplo), aunque hay veces estos incluyen demasiadas cosas que realmente uno no usa o no entiende.
+
+### Alternativas
+Otras herramientas populares para correr tareas son *grunt.js* y *gulp.js* (más nuevo), en estos la tareas se hacen en javascript. Otros setups avanzados incluyen webpack
