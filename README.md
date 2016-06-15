@@ -4,6 +4,9 @@ Sin usar gulp o grunt (para gulp preguntarle a Nicolas, :smiley:)
 ### Intro
 Si bien Chrome y Webkit ya son casi 100% compatibles con es6, la parte que aún no esta implementada en los browsers es la de imports y exports. Babel sirve para pegar todos los fuentes en un bundle que puede ser incluido en la pagina y que contiene todos los archivos fuentes, además puede transpilar features de es7, es6 a es5 para hacerlo compatible con navegadores como Internet Explorer o versiones anteriores de Chrome.
 
+### Paso 00
+Previamente se debe tener instalado nodejs. nodejs incluye una herramienta llamada npm que sirve para instalar dependencias y ejecutar comandos.
+
 #### Paso 0: Crear una carpeta src y una dist para los fuentes y para el bundle (archivo con todo incluido)
 ```bash
 mkdir src 
