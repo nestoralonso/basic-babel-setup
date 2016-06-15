@@ -96,7 +96,12 @@ Babel necesita configuración porque puede hacer un gran variedad de cosas como 
 ```bash
 npm run build
 ```
-Este paso genera un *bundle.js* en la carpeta dist, este se puede jecutar directamente en node on si es para una página incluirlo en la sección de scripts
+Este paso genera un *bundle.js* en la carpeta dist, este se puede ejecutar directamente en node on si es para una página incluirlo en la sección de scripts. 
+
+Para ver que otros scripts están disponibles para correr en el *package.json*:
+```bash
+npm run
+```
 
 ### Qué leer después
 
