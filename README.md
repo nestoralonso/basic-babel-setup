@@ -53,7 +53,7 @@ Ahora editar el *package.json* generado y añadir esta línea en la sección de 
 "build": "browserify src/main.js -t babelify --outfile dist/bundle.js"
 ```
 El archivo deberia quedar algo asi
-```json
+```javascript
 {
   "name": "basic-babel-setup",
   "version": "1.0.0",
@@ -85,7 +85,7 @@ El archivo deberia quedar algo asi
 
 ### Paso 4: poner un archivo de configuracion para babel ** importante **
 Crear un archivo *.babelrc*, en este se guarda la configuracion de babel, con el siguiente contenido
-```json
+```javascript
 {
   "presets": [ "es2015"]
 }
