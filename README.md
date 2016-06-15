@@ -1,6 +1,9 @@
 # basic-babel-setup
 Sin usar gulp o grunt (para gulp preguntarle a Nicolas, :smiley:) 
 
+### Intro
+Si bien Chrome y Webkit ya son casi 100% compatibles con es6, la parte que aún no esta implementada en los browsers es la de imports y exports. Babel sirve para pegar todos los fuentes en un bundle que puede ser incluido en la pagina y que contiene todos los archivos, además puede transpilar features de es6 a es5 para hacerlo compatible con navegadores como Internet Explorer o versiones anteriores de Chrome.
+
 #### Paso 0: Crear una carpeta src y una dist para los fuentes y para el bundle (archivo con todo incluido)
 ```bash
 mkdir src 
@@ -84,7 +87,8 @@ Crear un archivo *.babelrc*, en este se guarda la configuracion de babel, con el
   "presets": [ "es2015"]
 }
 ```
-Babel necesita configuración porque puede hacer un gran variedad de cosas como transpilar es6, es7, o el lenguaje loco de react que se llama JSX ( q es como JS + HTML ), entonces dependiendo de lo que se quiera se pudene incluir otros presets o plugins dependiendo de los features que se quieran usar
+Babel necesita configuración porque puede hacer un gran variedad de cosas como transpilar es6, es7, o el lenguaje loco de react que se llama JSX ( q es como JS + HTML ), entonces dependiendo de lo que se quiera se pueden incluir otros presets o plugins dependiendo de los features que se quieran usar como generators o el spread operator que aún no son standard.
+
 ### Paso 5: Correr el script para crear el bundle
 ```bash
 npm run build
