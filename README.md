@@ -77,8 +77,8 @@ El archivo deberia quedar algo asi
 }
 ```
 
-### Paso 4: poner un archivo de configuracion para babel
-Crear un archivo .babelrc, en este se guarda la configuracion de babel, con el siguiente contenido
+### Paso 4: poner un archivo de configuracion para babel ** importante **
+Crear un archivo *.babelrc*, en este se guarda la configuracion de babel, con el siguiente contenido
 ```json
 {
   "presets": [ "es2015"]
