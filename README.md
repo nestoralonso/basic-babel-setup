@@ -90,7 +90,7 @@ Crear un archivo *.babelrc*, en este se guarda la configuracion de babel, con el
   "presets": [ "es2015"]
 }
 ```
-Babel necesita configuración porque puede hacer un gran variedad de cosas como transpilar es6, es7, o el lenguaje loco de react que se llama JSX ( q es como JS + HTML ), entonces dependiendo de lo que se quiera se pueden incluir otros presets o plugins dependiendo de los features que se quieran usar como generators o el spread operator que aún no son standard.
+Babel necesita configuración porque puede hacer un gran variedad de cosas como transpilar es6, es7, o el lenguaje loco de react que se llama JSX ( q es como JS + HTML ), entonces dependiendo de lo que se quiera se pueden incluir otros presets o plugins dependiendo de los features que se quieran usar como *generators* o el *object spread operator* que aún no son standarden EcmaScript.
 
 ### Paso 5: Correr el script para crear el bundle
 ```bash
