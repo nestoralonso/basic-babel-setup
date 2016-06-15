@@ -102,7 +102,7 @@ Este paso genera un *bundle.js* en la carpeta dist, este se puede jecutar direct
 
 *npm* sirve para automatizar toda clase de tareas como:
 - Estar pendiente de cambios en los fuentes, compilar y recargar automaticamente el browser.
-- correr preprocesadores como sass (css en esteroides), less (es como sass). 
+- correr preprocesadores como sass (css en esteroides), less (es como sass pero distinto ```¯\_(ツ)_/¯``` ). 
 - correr linters (estos revisan el código y alertan de posibles errores como falta de puntos y comas o indentación incorrecta)
 - correr test automatizados (ver jasmine o mocha)
  
