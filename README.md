@@ -1,12 +1,12 @@
 # basic-babel-setup
-Sin usar gulp o grunt
+Sin usar gulp o grunt (para gulp preguntarle a Nicolas, :smiley:) 
 
 #### Paso 0: Crear una carpeta src y una dist para los fuentes y para el bundle (archivo con todo incluido)
 ```bash
 mkdir src 
 mkdir dist
 ```
-en src crear un main.js con este contenido
+en la carpeta *src* crear un *main.js* con este contenido
 ```javascript
 import { suma, multiplicacion } from './matematicas';
 
@@ -16,7 +16,7 @@ console.log('res= ' + res);
 res = multiplicacion(2, 6);
 console.log('res= ' + res);
 ```
-y un matematicas.js con el siguiente contenido
+y un *matematicas.js* con el siguiente contenido
 ```javascript
 export function suma(x, y) {
     return x + y;
@@ -29,24 +29,24 @@ export function multiplicacion(x, y) {
 
 ### Paso 1: Crear un proyecto vacio de npm
 
-La siguiente línea crea un archivo llamado package.json en donde se guardan las dependencias externas del proyecto
+La siguiente línea crea un archivo llamado *package.json* en donde se guardan las dependencias externas del proyecto
 
 ```bash
 npm init -y
 ```
 
 ### Paso 2: Instalar dependencias 
-Instala babel, browserify y el preset por defecto de es2015 (aka es6), el --save-dev es para que lo guarde en package.json
+Instala *babel*, *browserify*, *babelify* y el preset por defecto de es2015 (aka es6), el --save-dev es para que lo guarde en *package.json*
 ```bash
 npm install --save-dev babel babel-preset-es2015 browserify babelify 
 ```
 
 ### Paso 3: editar package.json
-Ahora editar el package.json generado y añadir esta línea en la sección de scripts del *package.json*
+Ahora editar el *package.json* generado y añadir esta línea en la sección de scripts
 ```javascript
 "build": "browserify src/main.js -t babelify --outfile dist/bundle.js"
 ```
-Asi que el archivo deberia quedar algo asi
+El archivo deberia quedar algo asi
 ```json
 {
   "name": "basic-babel-setup",
@@ -86,4 +86,6 @@ Crear un archivo .babelrc, en este se guarda la configuracion de babel, con el s
 ```
 
 ### Paso 5: Correr el script para crear el bundle
+```bash
 npm run build
+```
