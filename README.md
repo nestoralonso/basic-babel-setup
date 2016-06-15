@@ -84,8 +84,9 @@ Crear un archivo *.babelrc*, en este se guarda la configuracion de babel, con el
   "presets": [ "es2015"]
 }
 ```
-
+Babel necesita configuración porque puede hacer un gran variedad de cosas como transpilar es6, es7, o el lenguaje loco de react que se llama JSX ( q es como JS + HTML ), entonces dependiendo de lo que se quiera se pudene incluir otros presets o plugins dependiendo de los features que se quieran usar
 ### Paso 5: Correr el script para crear el bundle
 ```bash
 npm run build
 ```
+Este paso genera un *bundle.js* en la carpeta dist, este se puede jecutar directamente en node on si es para una página incluirlo en la sección de scripts 
