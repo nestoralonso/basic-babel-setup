@@ -121,3 +121,29 @@ La función básica de *npm* es bajar dependencias, pero también sirve para aut
 Otras herramientas populares para correr tareas son *grunt.js* y *gulp.js* (más nuevo), en estos las tareas se hacen en javascript. Otros setups avanzados incluyen *webpack*.
 
 Para bajar dependencias a veces también se usa *bower* (deps de browser como jquery o angular) o *jspm*.
+
+### Comandos básicos de npm
+```bash
+npm install
+```
+Instala las dependencias que encuentre en *package.json*
+
+```bash
+npm install paquete --save
+```
+Instala las dependencia *paquete* y la guarda en package.json en la sección de dependencias
+
+```bash
+npm install paquete-dev --save-dev
+```
+Instala las dependencia *paquete-dev* y la guarda en package.json en la sección de devDependencias 
+
+```bash
+npm update
+```
+Actualiza las dependencias a versiones más recientes (usese con cautela)
+
+```bash
+npm run tarea
+```
+Ejecuta el script con el nombre tarea que este en el *package.json* en la sección de scripts
