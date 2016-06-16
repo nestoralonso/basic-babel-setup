@@ -107,7 +107,7 @@ npm run
 
 La función básica de *npm* es bajar dependencias, pero también sirve para automatizar  tareas como:
 - Estar pendiente de cambios en los fuentes, compilar y recargar automaticamente el browser.
-- correr preprocesadores como sass (css en esteroides), less (es como sass pero distinto ```¯\_(ツ)_/¯``` ). 
+- correr preprocesadores como sass (css en esteroides), less  ( es como sass pero distinto ```¯\_(ツ)_/¯``` ). 
 - correr linters (estos revisan el código y alertan de posibles errores como falta de puntos y comas o indentación incorrecta)
 - correr test automatizados (ver jasmine o mocha)
  
@@ -146,4 +146,4 @@ Actualiza las dependencias a versiones más recientes (usese con cautela)
 ```bash
 npm run tarea
 ```
-Ejecuta el script con el nombre tarea que este en el *package.json* en la sección de scripts
+Ejecuta el script con el nombre tarea que este en el *package.json* en la sección de scripts, tarea puede ser un comando del sistema operativo como rm u ls
