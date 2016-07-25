@@ -1,7 +1,7 @@
-import { suma, multiplicacion } from './matematicas';
+import { sum, mult } from './math-utils';
 
-var res = suma(2, 3);
+var res = sum(2, 3);
 console.log('res= ' + res);
 
-res = multiplicacion(2, 6);
+res = mult(2, 6);
 console.log('res= ' + res);

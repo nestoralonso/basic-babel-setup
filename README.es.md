@@ -14,21 +14,21 @@ mkdir dist
 ```
 en la carpeta *src* crear un *main.js* con este contenido
 ```javascript
-import { suma, multiplicacion } from './matematicas';
+import { sum, mult } from './matematicas';
 
-var res = suma(2, 3);
+var res = sum(2, 3);
 console.log('res= ' + res);
 
-res = multiplicacion(2, 6);
+res = mult(2, 6);
 console.log('res= ' + res);
 ```
-y un *matematicas.js* con el siguiente contenido
+y un *math-utils.js* con el siguiente contenido
 ```javascript
-export function suma(x, y) {
+export function sum(x, y) {
     return x + y;
 }
 
-export function multiplicacion(x, y) {
+export function mult(x, y) {
     return x * y;
 }
 ```
@@ -44,7 +44,7 @@ npm init -y
 ### Paso 2: Instalar dependencias 
 Instala *babel*, *browserify*, *babelify* y el preset por defecto de es2015 (aka es6), el --save-dev es para que lo guarde en *package.json*
 ```bash
-npm install --save-dev babel babel-preset-es2015 browserify babelify 
+npm install --save-dev babel-core babel-preset-es2015 browserify babelify 
 ```
 
 ### Paso 3: editar package.json
